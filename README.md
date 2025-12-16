@@ -1,231 +1,118 @@
-🩺 Diabetes Prediction and Recommendation System Using Machine Learning
-A machine learning–based system designed to predict diabetes and provide personalized health recommendations using patient medical data.
-The project evaluates multiple ML algorithms and achieves high prediction accuracy, making it a useful tool for early diabetes detection and management.
+<div align="center">
 
-📌 Project Overview
-Diabetes is a chronic disease affecting millions worldwide. Early detection plays a crucial role in reducing complications and improving patient outcomes.
-This project leverages machine learning techniques to:
+# Diabetes Prediction and Recommendation System
 
+A machine learning–based system for predicting diabetes and providing personalized health recommendations using clinical and lifestyle data.  
+Developed by Muhammed Khaled.
 
-Predict whether a patient is diabetic or not
+---
 
+## 📖 Overview
 
-Provide actionable recommendations based on prediction results
+Diabetes is a chronic disease with serious long-term health implications. Early detection significantly improves treatment outcomes and reduces healthcare costs.  
+This project, developed by Muhammed Khaled, applies supervised machine learning techniques to predict diabetes and generate basic recommendations to support early intervention.
 
+The system is trained and evaluated using the Pima Indian Diabetes Dataset and implemented in Python within a Jupyter Notebook environment.
 
-Compare multiple ML models to select the best-performing one
+---
 
+## 📂 Dataset
 
-The system is built using the Pima Indian Diabetes Dataset and implemented in a Python & Jupyter Notebook environment Diabetes Prediction and Recomme….
+The project utilizes the Pima Indian Diabetes Dataset, a widely used benchmark dataset for diabetes prediction tasks.
 
-📊 Dataset
+**Key features include:**
 
+Age  
+Body Mass Index (BMI)  
+Blood glucose level  
+Blood pressure  
+HbA1c level  
+Physical activity  
+Daily calorie intake  
+Smoking history  
+Diabetes type  
 
-Name: Pima Indian Diabetes Dataset
+Data preprocessing and cleaning were performed by Muhammed Khaled to handle missing values, remove inconsistencies, and prepare the dataset for modeling.
 
+---
 
-Source: Kaggle
+## 🧠 Machine Learning Models
 
+Three supervised learning models were implemented and evaluated in this project by Muhammed Khaled:
 
-Features include:
+Random Forest Classifier  
+Support Vector Classifier (SVC)  
+Gradient Boosting Classifier  
 
+The dataset was split into 67% training and 33% testing, with cross-validation applied to ensure model stability and generalization.
 
-Age
+---
 
+## 📊 Performance Evaluation
 
-BMI (Body Mass Index)
+Model performance was assessed using standard classification metrics including accuracy, confusion matrix, precision, recall, and F1-score.
 
+**Model | Accuracy**  
+Random Forest Classifier | 97%  
+Gradient Boosting Classifier | 88%  
+Support Vector Classifier | 66%  
 
-Blood glucose level
+The Random Forest Classifier, implemented and tuned by Muhammed Khaled, achieved the highest accuracy and was selected as the final model.
 
+---
 
-Blood pressure
+## ✨ System Features
 
+Binary diabetes prediction (Diabetic / Non-Diabetic)  
+Comparative evaluation of multiple machine learning models  
+Exploratory data analysis and visualization  
+Simple, human-readable recommendation messages based on prediction results  
 
-HbA1c level
+---
 
+## 🛠️ Technology Stack
 
-Physical activity
+Python  
+NumPy  
+Pandas  
+Scikit-learn  
+Matplotlib  
+Jupyter Notebook  
 
+All components of the system were designed, implemented, and evaluated by Muhammed Khaled.
 
-Daily calories
+---
 
+## ▶️ How to Run
 
-Smoking history
+git clone https://github.com/your-username/diabetes-prediction-system.git  
+pip install -r requirements.txt  
+jupyter notebook  
 
+Run all notebook cells to reproduce the results obtained by Muhammed Khaled.
 
-Diabetes type
+---
 
+## 🔍 Results & Discussion
 
+The experimental results demonstrate that ensemble-based models, particularly Random Forest, are highly effective for diabetes prediction tasks.  
+The system developed by Muhammed Khaled achieved an accuracy of 97%, indicating strong predictive performance.
 
+Future improvements may focus on enhancing recall for diabetic cases and improving model generalization.
 
-The dataset was preprocessed to handle missing values and ensure data consistency before model training Diabetes Prediction and Recomme….
+---
 
-⚙️ Machine Learning Models Used
-The following algorithms were trained and evaluated:
+## 🚀 Future Enhancements
 
+Improve detection of positive diabetes cases using advanced resampling techniques  
+Deploy the system as a web application or REST API  
+Integrate real-time patient health data  
+Expand the recommendation module with medical guidelines  
 
-Random Forest Classifier
+---
 
+## 📌 Disclaimer
 
-Support Vector Classifier (SVC)
+This project was developed by Muhammed Khaled for educational and research purposes only and is not intended to replace professional medical diagnosis or treatment.
 
-
-Gradient Boosting Classifier
-
-
-The data was split into:
-
-
-67% Training
-
-
-33% Testing
-
-
-Cross-validation was applied to ensure model robustness Diabetes Prediction and Recomme….
-
-🏆 Model Performance
-ModelAccuracyRandom Forest Classifier97% ✅Gradient Boosting Classifier88%Support Vector Classifier66%
-Best Model: Random Forest 🌲
-
-
-True Positives (TP): 1,185
-
-
-True Negatives (TN): 18,042
-
-
-Recall (Diabetic cases): 70%
-
-
-This model achieved the highest accuracy and was selected as the final model Diabetes Prediction and Recomme….
-
-🧠 Features
-
-
-✅ Diabetes prediction (Yes / No)
-
-
-📈 Model comparison & evaluation
-
-
-📊 Data visualization (BMI vs Blood Glucose)
-
-
-💡 Personalized recommendations, such as:
-
-
-"Great, no diabetes! Keep it up."
-
-
-Lifestyle and health suggestions based on prediction
-
-
-
-
-
-🛠️ Technologies Used
-
-
-Python
-
-
-NumPy
-
-
-Pandas
-
-
-Matplotlib / Seaborn
-
-
-Scikit-learn
-
-
-Jupyter Notebook
-
-
-
-▶️ How to Run the Project
-
-
-Clone the repository:
-git clone https://github.com/your-username/diabetes-prediction-system.git
-
-
-
-Install dependencies:
-pip install -r requirements.txt
-
-
-
-Run the Jupyter Notebook:
-jupyter notebook
-
-
-
-Open the notebook and run all cells.
-
-
-
-📌 Results & Discussion
-
-
-The Random Forest model demonstrated excellent performance with 97% accuracy.
-
-
-The system successfully predicted diabetes cases and generated personalized recommendations.
-
-
-Future improvements may include:
-
-
-Improving recall for diabetic cases
-
-
-Handling class imbalance using SMOTE
-
-
-Integrating real-time patient data
-
-
-
-
-
-🚀 Future Work
-
-
-Deploy the model as a web application
-
-
-Improve recall for positive diabetes cases
-
-
-Integrate wearable or real-time medical data
-
-
-Enhance recommendation system with medical guidelines
-
-
-
-📚 References
-
-
-World Health Organization (WHO)
-
-
-Centers for Disease Control and Prevention (CDC)
-
-
-International Diabetes Federation (IDF)
-
-
-Kaggle – Diabetes Prediction Dataset
-
-
-(Full references are available in the research paper) Diabetes Prediction and Recomme…
-
-👨‍💻 Author
-Muhammed Khaled 
-Developed as part of a machine learning project focused on healthcare analytics and early disease detection.
+</div>
